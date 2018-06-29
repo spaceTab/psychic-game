@@ -46,7 +46,7 @@ document.onkeydown = function(event) {
         guesses--;
         badGuess.push(userGuess);
         document.getElementById("guessLeft").innerHTML = "Remaining Guesses: " + guesses;
-        document.getElementById("guesses").innerHTML = "Your Guess's: " + badGuess
+        document.getElementById("guesses").innerHTML = "Your Guesses: " + badGuess
 
     }
 
@@ -55,6 +55,6 @@ document.onkeydown = function(event) {
 window.onload = function () {
     document.getElementById("wins").innerHTML = "Wins: " + wins;
     document.getElementById("losses").innerHTML = "Losses: " + losses;
-    document.getElementById("guesses").innerHTML = "Your Guess's: " + badGuess;
-    document.getElementById("guessLeft").innerHTML = "guessLeft: " + guesses;
+    document.getElementById("guesses").innerHTML = "Your Guesses: " + badGuess;
+    document.getElementById("guessLeft").innerHTML = "Remaining Guesses: " + guesses;
 }
