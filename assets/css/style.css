@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Poor+Story');
+
 * {
     box-sizing: border-box;
 }
@@ -18,13 +20,13 @@ html, body {
 }
 .title{
     text-align:   center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Poor Story', cursive;
     line-height:  95px;
     font-size: 50px;
     width: 100%;
     height: 50%;
     background-color: #000000;
-    color: #ffffff;
+    color: #39ff14;
     margin: 0px 5px 10px 5px;
     padding: 10px 5px 10px 5px;
 }
