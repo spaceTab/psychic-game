@@ -65,7 +65,7 @@ html, body {
 img {
     float: right;
     opacity: 0.9;
-    margin: 0px 10px 0px 0px;
+    margin: 0px 0px 0px 0px;
     border-style: groove;
     border-color: green;
     border-width: 5px;
@@ -73,18 +73,21 @@ img {
 }
 
 .ball {
+    display:inline-block;
     clear:both;
-    display: inline-block;
-    width: 50%;
-    height: 90%;
+    
+    width: 70%;
+    height: 100%;
     margin: 0;
     border-radius: 50%;
     position: relative;
     background: radial-gradient(circle at 50% 120%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);
   }
+
+  /*digregard*/
   .ball:before {
     content: "";
-    position: absolute;
+    position: relative;
     top: 1%;
     left: 5%;
     width: 50%;
