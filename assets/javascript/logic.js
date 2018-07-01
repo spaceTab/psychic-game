@@ -10,12 +10,12 @@ var alphabet = [
     'y', 'z'
 ];
 var letterChoice;
-var wins=0, losses=0, guesses=10;
+var wins = 0, losses = 0, guesses = 10;
 
-var badGuess=[];
+var badGuess = [];
 
 //chooses the letter from random point in array
-function letterPick(){
+function letterPick() {
     return letterChoice = alphabet[Math.floor(Math.random() * alphabet.length)];
 };
 letterPick();
@@ -23,25 +23,25 @@ console.log(letterChoice);
 
 
 
-document.onkeydown = function(event) {
-   // var guessHistory = badGuess.join(' ,');
-    
+document.onkeydown = function (event) {
+    // var guessHistory = badGuess.join(' ,');
+
     var userGuess = String.fromCharCode(event.keyCode).toLowerCase();
 
-    if (userGuess === letterChoice){
+    if (userGuess === letterChoice) {
         wins++;
         alert("You're truly a psychic")
         letterPick();
         console.log(letterChoice);
 
         document.getElementById("wins").innerHTML = "Wins: " + wins; //updates wins
-    } 
-    else if ( guesses == 0){
+    }
+    else if (guesses == 0) {
         losses++;
-        guesses=10;  
+        guesses = 10;
         alert("You Lost");
         document.getElementById("losses").innerHTML = "Losses: " + losses;
-        
+
     } else {
         guesses--;
         badGuess.push(userGuess);
@@ -62,6 +62,6 @@ window.onload = function () {
 
 //Pop up
 var popup
-if (wins >= 5){
+if (wins >= 5) {
     document.getElementById("pics").innerHTML = '<img src="assets/images/crystalball.jpg>'
 }
