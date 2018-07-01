@@ -7,7 +7,9 @@
 
 html, body {
     height:     100%;
-    background: linear-gradient(-90deg, pink, purple);
+    background-image: url(../images/misty.jpg);
+    background-size: 100%
+    /*background: linear-gradient(-90deg, rgb(224, 172, 181), rgb(177, 70, 177));*/
 }
 
 .wrapper {
@@ -21,25 +23,24 @@ html, body {
 }
 .title{
     text-align:   center;
-    font-family: 'Poor Story', cursive;
     line-height:  95px;
     font-size: 50px;
     width: 100%;
     height: 50%;
-    background-color: #000000;
+    background-color: #521449;
     margin: 0px 5px 10px 5px;
     padding: 10px 5px 10px 5px;
 
-    font-family: 'Futura';
-    color: #fff;
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0080, 0 0 30px #ff0080, 0 0 40px #ff0080, 0 0 55px #ff0080, 0 0 75px #ff0080;
-
+    /*'Neon sign like affect*/
     color: #fff;
 	text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff2d95, 0 0 30px #ff2d95, 0 0 40px #ff2d95, 0 0 50px #ff2d95, 0 0 75px #ff2d95;
 	letter-spacing: 5px;
-	font: 40px 'MisoRegular';
-
+    font: 40px 'MisoRegular';    
     
+    border: 1px solid #ff2d95;
+    padding: 10px;
+    box-shadow: 5px 10px 18px #ff2d95;
+
 }
 
 #gameBox {
@@ -76,12 +77,15 @@ html, body {
 img {
     float: right;
     opacity: 0.9;
-    margin: 0px 0px 0px 0px;
-    border-style: groove;
-    border-color: green;
-    border-width: 5px;
+    margin: 65px 20px 0px 0px;
+    border-style: solid;
+    border-color: #aaa;
+    border-width: 2px;
     max-width: 100%;
     height: auto;
+
+    box-shadow: 10px 12px 14px #aaa;
+
 
 }
 
@@ -94,10 +98,10 @@ img {
     margin: 0;
     border-radius: 50%;
     position: relative;
-    background: radial-gradient(circle at 50% 120%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);
+    background: radial-gradient(circle at 70% 150%, #062745 5%, #76deef 30%, #055194 80%, #062745 100%);
   }
 
-  /*digregard
+  /*digregard*/
   .crystalball:before {
     content: "";
     position: relative;
