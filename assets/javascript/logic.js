@@ -58,3 +58,10 @@ window.onload = function () {
     document.getElementById("guesses").innerHTML = "Your Guesses: " + badGuess;
     document.getElementById("guessLeft").innerHTML = "Remaining Guesses: " + guesses;
 }
+
+
+//Pop up
+var popup
+if (wins >= 5){
+    document.getElementById("pics").innerHTML = '<img src="assets/images/crystalball.jpg>'
+}
